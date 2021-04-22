@@ -52,25 +52,30 @@ $connect->close();
 
 <body>
     <div id="header"><?php include_once "header.php" ?></div>
-    <div class="manageProduct w-75 mt-3">
-        <div class='mb-3'>
-            <a href="create.php"><button class='btn btn-primary' type="button">Add product</button></a>
+    <div class="container-fluid mx-auto px-5">
+        <div id="index" class="mx-5 bg-secondary">
+            <div class="manageProduct w-75 mt-3">
+                <div class='mb-3'>
+                    <a href="create.php"><button class='btn btn-primary' type="button">Add product</button></a>
+                </div>
+                <p class='h2'>Products</p>
+                <table class='table table-striped'>
+                    <thead class='table-success'>
+                        <tr>
+                            <th>Picture</th>
+                            <th>Name</th>
+                            <th>price</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?= $tbody; ?>
+                    </tbody>
+                </table>
+            </div>
         </div>
-        <p class='h2'>Products</p>
-        <table class='table table-striped'>
-            <thead class='table-success'>
-                <tr>
-                    <th>Picture</th>
-                    <th>Name</th>
-                    <th>price</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?= $tbody; ?>
-            </tbody>
-        </table>
     </div>
+    <div id="footer"><?php include_once "footer.php" ?></div>
 </body>
 
 </html>

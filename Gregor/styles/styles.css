@@ -1,4 +1,28 @@
-#header img {
+body {
+  background-image: url("testbg.jpg");
+  background-repeat: no-repeat;
+}
+
+.wrapHero {
+  border: 1rem solid red;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+.wrapHero img {
   width: 100%;
+}
+
+#index {
+  border: 5px solid blue;
+  background-image: url("images/testbg.jpg");
+}
+
+#footer img {
+  width: 100%;
+  border: 10px solid green;
 }
 /*# sourceMappingURL=styles.css.map */
